@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/JonOpacich/Mongoose-News-Scraper/issues"
   },
-  "homepage": "https://github.com/JonOpacich/Mongoose-News-Scraper#readme"
+  "homepage": "https://github.com/JonOpacich/Mongoose-News-Scraper#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.7",
+    "morgan": "^1.9.0",
+    "request": "^2.87.0"
+  }
 }
