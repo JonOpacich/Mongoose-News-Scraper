@@ -2,6 +2,7 @@ let express = require("express");
 let bodyParser = require("body-parser");
 let logger = require("morgan");
 let mongoose = require("mongoose");
+let path = require('path');
 // Our scraping tools
 // request is a promised-based http library, similar to jQuery's Ajax method
 // It works on the client and on the server
@@ -34,6 +35,11 @@ var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines
 mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI);
 
+
+
+app.get('/', function(req, res) {
+  res.sendFile('index.html');
+});
 // A GET route for scraping the echoJS website
 app.get("/articles", function(req, res) {
   // First, we grab the body of the html with request
