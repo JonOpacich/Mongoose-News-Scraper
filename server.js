@@ -38,7 +38,7 @@ mongoose.connect(MONGODB_URI);
 
 
 app.get('/', function(req, res){
-  res.sendfile(__dirname + '/public/index.html');
+  res.sendfile(__dirname + 'bacon bits');
 });
 // A GET route for scraping the echoJS website
 app.get("/articles", function(req, res) {
