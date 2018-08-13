@@ -1,0 +1,44 @@
+#notes{
+    position:fixed;
+    bottom:50px;
+    right:50px;
+}
+textarea, input{
+    display:block;
+    width:100%;
+    background: rgb(240, 240, 240);
+}
+input {
+    margin:10px 0;
+    height:36px;
+    font-size:24px;
+    -webkit-box-shadow: 7px 10px 6px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 7px 10px 6px -4px rgba(0,0,0,0.75);
+box-shadow: 7px 10px 6px -4px rgba(0,0,0,0.75);
+}
+textarea{
+    margin-bottom: 10px;
+    height:200px;
+    font-size:18px;
+    -webkit-box-shadow: 7px 10px 6px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 7px 10px 6px -4px rgba(0,0,0,0.75);
+box-shadow: 7px 10px 6px -4px rgba(0,0,0,0.75);
+}
+.box{
+    background:rgb(236, 117, 117);
+    border-radius: 10px;
+    -webkit-box-shadow: 7px 10px 6px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 10px 6px -4px rgba(0,0,0,0.75);
+    box-shadow: 7px 10px 6px -4px rgba(0,0,0,0.75);
+}
+body{
+    background-image: url("https://i.ytimg.com/vi/e2OU56cLaOQ/maxresdefault.jpg");
+    background-repeat: stretch;
+    background-attachment: fixed;
+}
+.card{
+    border-radius:5px;
+}
+.site-title{
+    background:rgba(218, 217, 217, 0.26);
+}
