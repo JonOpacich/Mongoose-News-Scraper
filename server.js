@@ -28,7 +28,7 @@ app.use(express.static("public"));
 
 
 // If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+let MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 
 // Set mongoose to leverage built in JavaScript ES6 Promises
 // Connect to the Mongo DB
@@ -37,8 +37,8 @@ mongoose.connect(MONGODB_URI);
 
 
 
-app.get('/', function(req, res) {
-  res.sendFile('index.html');
+app.get('/', function(req, res){
+  res.sendfile(__dirname + '/public/index.html');
 });
 // A GET route for scraping the echoJS website
 app.get("/articles", function(req, res) {
